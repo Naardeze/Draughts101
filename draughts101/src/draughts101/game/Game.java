@@ -189,8 +189,7 @@ final public class Game extends JLayeredPane {
         
         for (int index = 0; index < position.length; index++) {
             if (isColor(color, position[index])) {
-                char piece = position[index];
-                
+                char piece = position[index];                
                 ArrayList<Move> pieceMoves = new ArrayList();
                 
                 for (Direction[] horizontal : new Direction[][] {{Direction.MIN_X_MIN_Y, Direction.MIN_X_PLUS_Y}, {Direction.PLUS_X_MIN_Y, Direction.PLUS_X_PLUS_Y}}) {
