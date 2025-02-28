@@ -82,7 +82,6 @@ final public class Game extends JLayeredPane {
                         
                         if (selected != HintBoard.NONE && !positionBoard.getMove().isEmpty() && (positionBoard.getIndex(index) == EMPTY || index == selected)) {
                             ArrayList<Integer> captures = new ArrayList(positionBoard.getMove());                            
-
                             int next = captures.remove(captures.size() - 1);
                             
                             if (index != next) {
