@@ -1,5 +1,6 @@
 package draughts101;
 
+import static draughts101.Board.AI;
 import static draughts101.Board.BLACK;
 import static draughts101.Board.BOARD;
 import static draughts101.Board.COLOR;
@@ -26,7 +27,6 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Stack;
-import static draughts101.Board.AI;
 
 final class Game extends Component implements ActionListener, MouseListener {
     final private static char W = 'w';
@@ -449,3 +449,4 @@ final class Game extends Component implements ActionListener, MouseListener {
     public void mouseExited(MouseEvent e) {}
 
 }
+
